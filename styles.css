@@ -1,0 +1,368 @@
+:root {
+    font-size: 62.5%;
+}
+* { 
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+}
+svg 
+{ 
+    max-width: 80rem;  
+    min-height: 5rem;
+    font-size: 1.5rem;
+    /* margin-top: 2rem; */
+}
+body 
+{ 
+    background-image: url("https://cdn.mos.cms.futurecdn.net/G79YngbW86RJ2QtzFfZEu3.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    font-style: normal; 
+    font-variant: normal; 
+    line-height: 0.8rem; 
+    width: 100vw;
+    min-height: 100vh;
+}
+path { fill: transparent; }
+text { fill: rgb(20, 54, 36); font-size: 3em; }
+.container 
+{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    max-width: 100vw; 
+    max-height: 100vh; 
+}
+.top 
+{ 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.8rem;
+}
+.container #btn 
+{ 
+    margin: 1.8rem auto; 
+}
+.container img 
+{ align-self: center;
+  max-width: 30rem; 
+  min-width: 15rem;
+  max-height: 30rem; 
+  border: 0.8em solid rgb(212, 212, 121); 
+  border-radius: 0.8em; 
+  margin:1em; }
+.container > div 
+{ 
+    padding: 0.8em 0px;
+}
+#personality, #species 
+{ 
+    padding: 1.6rem; 
+    font-weight: 500; 
+    font-size: 2rem; 
+    margin: 0; 
+}
+.pers,.spec 
+{ 
+    font-weight: 300; 
+    font-size: 1.2rem;
+    line-height: 0.2em;
+
+}
+#btn { 
+    padding: 1.7rem 2.28rem; 
+    background-color: rgb(238, 238, 186); 
+    border: 3px solid rgb(212, 212, 121); 
+    border-radius: 10px; 
+    /* margin-bottom: 5rem;  */
+    font-size: 2rem; 
+    font-weight: 600; 
+}
+#btn:hover 
+{ 
+    cursor: pointer;  
+    background-color: rgb(247, 241, 80); 
+    border-color: rgb(164, 159, 30); 
+    color: rgb(56, 51, 51); 
+    transition: background-color 0.3s linear 0s;
+}
+#catchPhrase 
+{ 
+    font-size: 2rem; 
+    align-self: center; 
+    border-bottom: 3px solid rgb(212, 212, 121); 
+    padding: 0px 2em 0.5em; 
+    font-weight: 700; 
+}
+#saying 
+{ 
+    align-self: center;
+    font-size: 2.5rem; 
+    font-weight: 300; 
+    line-height: 1.5em;
+    width: 100%; 
+    padding: 0 2rem 1rem 2rem;
+}
+#villagerName 
+{ 
+    justify-self: flex-start; 
+    font-size: 1.8rem; }
+#birthday { 
+    font-size: 1.4rem; 
+    justify-self: flex-end; 
+}
+
+#card 
+{ border: 15px solid rgb(212, 212, 121); 
+    box-shadow: rgb(0, 0, 0) -10px 0px 13px -7px, rgb(0, 0, 0) 10px 0px 13px -7px, rgba(0, 0, 0, 0) 5px 5px 15px 5px; 
+    border-radius: 15px; 
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/176622e8-bf4c-4d60-9a64-b75cff245c16/d3inhyi-28e16cb6-9d37-4a6e-bdc6-0d7fcf0af574.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3NjYyMmU4LWJmNGMtNGQ2MC05YTY0LWI3NWNmZjI0NWMxNlwvZDNpbmh5aS0yOGUxNmNiNi05ZDM3LTRhNmUtYmRjNi0wZDdmY2YwYWY1NzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gqQUvb9pdKz_BDtsTqXkpM1_aUHox6IXyveVcugbntg"); 
+    background-size: cover; 
+    display: flex; 
+    flex-direction: column; 
+}
+h3 
+{ 
+    margin: 0; 
+    padding: 0; 
+    font-size: 1.9rem; 
+}
+.hidden 
+{ 
+    visibility: hidden; 
+}
+.fixed 
+{ 
+    position: absolute; 
+    top: 15%; 
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+      margin: 0;
+    }
+    /* svg{
+        height: 8rem;
+    } */
+    body{
+      max-height: 100vh;
+      background-image: url(https://w0.peakpx.com/wallpaper/514/507/HD-wallpaper-animal-crossing.jpg)
+    }
+    #card { 
+      min-width: 20rem; 
+      max-width: 28rem;
+      padding: 0 0.2em; 
+      height: auto; 
+      margin-top: 2rem;
+      margin-bottom: 0em; 
+  }
+    #catchPhrase {
+      font-size: 1.8rem;
+      font-weight: 700;
+      padding: 2rem; 
+    }
+    #btn :hover{
+      padding: 0.6em 0.8em;
+    }
+    #saying { 
+      width: 100%; 
+      height: auto; 
+      font-size: 1.8rem; 
+      padding: 0 2rem 1rem 2rem;
+  }
+    .container img { 
+      width: 22rem; 
+      height: auto; 
+  }
+    .container { 
+        max-width: 100vw; 
+        max-height: 100vh; 
+      }
+    #species, #personality { 
+        padding: 0; 
+        margin: 0; 
+        font-size: 2rem; 
+        font-weight: 500; 
+        width: 10vw; 
+        height: 5vh; 
+      }
+    .spec, .pers {  
+        padding-left: 0.8rem;
+        font-weight: 300; 
+        font-size: 1.7rem;
+        line-height: 1rem;
+    }
+    #btn { 
+        margin:0;
+        font-size: 1.4rem; 
+      }
+    h3 {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      font-weight: 400;
+    }
+    #birthday {
+      font-size: 1.2em;
+    }
+    
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+      *{
+          margin: 0;
+        }
+        body{
+          max-width: 100%;
+          max-height: 100%;
+          background-image: url(https://w0.peakpx.com/wallpaper/514/507/HD-wallpaper-animal-crossing.jpg)
+        }
+        #card { 
+          min-width: 30rem; 
+          padding: 0 0.2em; 
+          height: auto; 
+          margin-top: 2rem;
+          margin-bottom: 0em; 
+      }
+        #catchPhrase {
+          font-size: 1.8rem;
+          font-weight: 700;
+          padding: 2rem; 
+        }
+        #btn :hover{
+          padding: 0.6em 0.8em;
+        }
+        #saying { 
+          width: 100%; 
+          height: auto; 
+          font-size: 1.8rem; 
+          padding: 0 2rem 1rem 2rem; 
+      }
+        .container img { 
+          width: 22rem; 
+          height: auto; 
+      }
+        .container { 
+            max-width: 100vw; 
+            max-height: 100vh; 
+          }
+        #species, #personality { 
+          padding-right: 1rem;
+            font-size: 2rem; 
+            font-weight: 500; 
+            width: 10vw; 
+            height: 5vh; 
+          }
+        .spec, .pers {  
+            padding-left: 0.8rem;
+            font-weight: 300; 
+            font-size: 1.7rem;
+            line-height: 1rem;
+          }
+        #btn { 
+            margin:0;
+            font-size: 1.4rem; 
+          }
+        h3 {
+          font-size: 1.2rem;
+          line-height: 1.2rem;
+          font-weight: 400;
+        }
+        #birthday {
+          font-size: 1.2em;
+        }
+        
+  }
+  @media only screen and (min-width: 740px){
+      #card {
+          max-width: 30rem;
+          max-height: 60rem;
+      }
+
+  }
+  @media only screen and (min-width: 800px){
+    #card{ 
+        max-width: 30rem; 
+        max-height: 60rem; 
+        }
+  }
+  @media only screen and (min-width: 992px){
+      body {
+        background-image: url("https://cdn.mos.cms.futurecdn.net/G79YngbW86RJ2QtzFfZEu3.jpg");
+      }
+      .container img {
+          min-width: 28rem;
+          max-height: 30rem;
+      }
+    #card{ 
+    max-width: 35rem; 
+    max-height: 90rem; 
+    min-height: 55rem;
+    /* min-width: 37rem; */
+    }
+    #personality, #species 
+{ 
+    padding: 1.6rem; 
+    font-weight: 500; 
+    font-size: 2rem; 
+    margin: 0; 
+}
+.pers,.spec 
+{ 
+    padding-left: 0.8rem;
+    font-weight: 300; 
+    font-size: 1.8rem;
+    line-height: 1rem;
+
+}
+#btn { 
+    padding: 1.7rem 2.28rem; 
+    background-color: rgb(238, 238, 186); 
+    border: 3px solid rgb(212, 212, 121); 
+    border-radius: 10px; 
+    /* margin-bottom: 5rem;  */
+    font-size: 2rem; 
+    font-weight: 600; 
+}
+#btn:hover 
+{ 
+    cursor: pointer;  
+    background-color: rgb(247, 241, 80); 
+    border-color: rgb(164, 159, 30); 
+    color: rgb(56, 51, 51); 
+    transition: background-color 0.3s linear 0s;
+}
+#catchPhrase 
+{ 
+    font-size: 2rem; 
+    align-self: center; 
+    border-bottom: 3px solid rgb(212, 212, 121); 
+    padding: 2rem; 
+    font-weight: 700; 
+}
+#saying 
+{ 
+    padding: 0 2rem 1rem 2rem;
+    align-self: center;
+    font-size: 1.8rem; 
+    font-weight: 300; 
+    line-height: 1.5em;
+    width: 100%; 
+}
+#villagerName 
+{ 
+    justify-self: flex-start; 
+    font-size: 2.2rem; }
+#birthday { 
+    font-size: 1.4rem; 
+    justify-self: flex-end; 
+}
+svg {
+    min-height: 5rem;
+    width: 60rem;
+}
+
+  }
