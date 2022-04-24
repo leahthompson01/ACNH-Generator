@@ -364,7 +364,7 @@ svg {
 }
 
   }
-  @media only screen and (max-height:608px){
+  @media only screen and (max-height:712px){
       *{
           margin: 0;
         }
