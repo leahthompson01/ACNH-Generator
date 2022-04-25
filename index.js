@@ -10,18 +10,15 @@ const villagerBirthday = document.querySelector('#birthday')
 btn.addEventListener('click', getCharacter)
 function getCharacter(){
     let random = Math.floor(Math.random() * 391)
-    console.log(random)
 fetch(url)
 .then(res => res.json())
 .then(data => {
-    console.log(data)
     btn.classList.remove('fixed')
     document.querySelector('#card').classList.remove('hidden')
     if (document.querySelector('span')){
         document.querySelector('.spec').remove()
         document.querySelector('.pers').remove()
     } 
-    console.log(data[random])
     villagerImg.src = data[random].image_uri
     villagerName.innerText = data[random].name['name-USen']
     let span1 = document.createElement('span')
